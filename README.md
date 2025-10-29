@@ -71,6 +71,6 @@ and you should skip down the page
 </details>
 
 
-## The translator
+## [The translator](https://JensTech.github.io/HTMLMarkdown/translator.html)
 ### Translates HTML to markdown and back. Very simple
 ![The Translator](cdn/images/Translator.png)
