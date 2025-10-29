@@ -1,0 +1,123 @@
+:root {
+    --background-color: #0d1117;
+    --header-color: #131922;
+    --color: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+    background-color: var(--background-color);
+    color: var(--color);
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    background-color: var(--header-color);
+    font-size: 1.5rem;
+    color: var(--color);
+}
+
+.container {
+    display: flex;
+    max-width: 1100px;
+    margin: 20px auto;
+    gap: 10px;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box {
+    flex: 1 1 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    text-align: center;
+    color: #ccc;
+}
+
+textarea {
+    flex: 1;
+    width: 100%;
+    min-height: 400px;
+    border-radius: 8px;
+    padding: 12px;
+    font-family: monospace;
+    font-size: 14px;
+    resize: vertical;
+    overflow-x: auto;
+    transition: all 0.2s ease;
+    background-color: #1e1e1e;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+#mdInput.active {
+    border: 2px solid #2ea44f;
+}
+
+#htmlInput.active {
+    border: 2px solid #2ea44f;
+}
+
+.swap-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 6px;
+}
+
+.swap-btn {
+    background: #2ea44f;
+    margin-left: 30px;
+    width: 70px;
+    height: 70px;
+    color: #fff;
+    border: none;
+    font-size: 24px;
+    border-radius: 50%;
+    padding: 16px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1);
+}
+
+.swap-btn:hover {
+    transform: scale(1.1);
+    background: #28a339;
+}
+
+@media (max-width: 1155px) {
+    .box {
+        flex: 1 1 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box textarea {
+        width: 90%;
+    }
+
+    .swap-section {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 10px 0;
+    }
+}

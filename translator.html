@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translator | HTMLMarkdown</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/turndown/dist/turndown.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-beautify@1.14.7/js/lib/beautify.js"></script>
+
+    <link rel="stylesheet" href="/cdn/translatestyle.css">
+</head>
+
+<body>
+    <h1>Translate markdown and HTML</h1>
+
+    <div class="container">
+        <div class="box">
+            <label>Markdown</label>
+            <textarea id="mdInput" class="active" placeholder="# Part 1\n[go to part 1](#part-1)"></textarea>
+        </div>
+
+        <div class="swap-section">
+            <button id="swapBtn" class="swap-btn">⇄</button>
+        </div>
+
+        <div class="box">
+            <label>HTML</label>
+            <textarea id="htmlInput" readonly placeholder="<h1 id='part-1'>Part 1</h1>"></textarea>
+        </div>
+    </div>
+
+    <script src="cdn/translate.app.js"></script>
+</body>
+</html>

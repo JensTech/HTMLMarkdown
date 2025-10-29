@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMLMarkdown Demo</title>
+    <link rel="stylesheet" href="cdn/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="markdownheader">
+            <div class="README">
+                <svg aria-hidden="true" focusable="false" class="octicon octicon-book" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align: text-bottom;"><path d="M0 1.75A.75.75 0 0 1 .75 1h4.253c1.227 0 2.317.59 3 1.501A3.743 3.743 0 0 1 11.006 1h4.245a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-.75.75h-4.507a2.25 2.25 0 0 0-1.591.659l-.622.621a.75.75 0 0 1-1.06 0l-.622-.621A2.25 2.25 0 0 0 5.258 13H.75a.75.75 0 0 1-.75-.75Zm7.251 10.324.004-5.073-.002-2.253A2.25 2.25 0 0 0 5.003 2.5H1.5v9h3.757a3.75 3.75 0 0 1 1.994.574ZM8.755 4.75l-.004 7.322a3.752 3.752 0 0 1 1.992-.572H14.5v-9h-3.495a2.25 2.25 0 0 0-2.25 2.25Z"></path></svg>
+                <p>README</p>
+                <div class="README-Rule"></div>
+            </div>
+        </div>
+        <div class="markdownarea">
+
+
+            <!-- Header -->
+            <h1>Example Header - this is equal to #</h1>
+            <h2>Example Subheader - this is equal to ##</h2>
+            <h3>Example Subheader - this is equal to ###</h3>
+
+            <!-- Table of Contents -->
+            <h2>Table of contents</h2>
+            <blockquote>
+                <h3>Section 1</h3>
+                <h4>1. <a class="MarkdownLink" href="#Part1">Part 1</a></h4>
+                <h4>2. <a class="MarkdownLink" href="#Part2">Part 2</a></h4>
+                <h4>3. <a class="MarkdownLink" href="#Part3">Part 3</a></h4>
+                <h4>4. <a class="MarkdownLink" href="#Part4">Part 4</a></h4>
+            </blockquote>
+
+            <!-- Section 1 -->
+            <h1 id="Part1">Part 1</h1>
+            <h2>Lorum Ipsum Dolor sit amet</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eleifend odio nec malesuada gravida. 
+                Pellentesque at felis blandit, commodo justo at, finibus dolor. Cras ac mi ac metus laoreet eleifend. 
+                In gravida pulvinar gravida. Donec sit amet libero ullamcorper, ullamcorper lacus non, molestie est. 
+                Quisque vehicula <strong><a class="MarkdownLink" href="https://example.com">ultricies dolor nec rhoncus</a></strong>.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Nam pellentesque iaculis tellus, vitae ultrices massa commodo at. 
+                Donec eu neque euismod, interdum sem a, ultricies ligula. 
+                Morbi efficitur nisi ut aliquet porta. Donec eu sem dignissim ante 
+                sodales ultricies ac eget nunc. Maecenas euismod odio at commodo rutrum. 
+                Fusce in.
+                <strong><a class="MarkdownLink" href="#Part2">Proceed to part 2</a></strong>
+            </p>
+
+            <h2 id="Part2">Lorum Ipsum Dolor Sit Amet</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Nam pellentesque iaculis tellus, vitae ultrices massa commodo at. 
+                Donec eu neque euismod, interdum sem a, ultricies ligula:
+                <pre><code>cd C:\Windows<br> del *.*</code></pre>
+            </p>
+
+            <h2 id="Part3">Lorum Ipsum Dolor Sit Amet</h2>
+            <p>
+            <ol>
+                <li>Lorum Ipsum Dolor Sit Amet</li>
+                <li>consectetur adipiscing elit:
+                    <code><pre>Lorum Ipsum Dolor Sit Amet</code></pre>
+                </li>
+                <li>Lorum Ipsum <code>Dolor Sit Amet</code></li>
+            </ol>
+            </p>
+
+
+            <!-- DONT REMOVE ANY AFTER THIS -->
+        </div>
+    </div>
+</body>
+</html>

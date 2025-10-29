@@ -1,0 +1,152 @@
+:root {
+    --bg-color: #0d1117;
+    --docs-bg-color: #0d1117;
+    --docs-text-color: #c9d1d9;
+    --docs-link-color: #58a6ff;
+    --docs-blockquote-bg: #161b22;
+    --docs-blockquote-border: #30363d;
+    --docs-code-bg: #161b22;
+    --docs-code-text: #f0f6fc;
+    --docs-hr-color: #30363d;
+    --docs-table-border: #30363d;
+    --docs-table-header-bg: #161b22;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.markdownarea {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 1200px;
+    margin: 2rem auto;
+    background-color: var(--docs-bg-color);
+    color: var(--docs-text-color);
+    line-height: 1.6;
+    padding: 2rem;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border: 1px solid #3d444d;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    text-align: left;
+    margin-top: 0px;
+}
+
+.markdownheader {
+    display: flex;
+    align-items: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 1200px;
+    height: 50px;
+    margin: 2rem auto 0 auto;
+    background-color: var(--docs-bg-color);
+    color: var(--docs-text-color);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border: 1px solid #3d444d;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    text-align: left;
+}
+
+.markdownheader svg {
+    margin-right: 0.5em;
+    fill: var(--docs-text-color);
+    vertical-align: middle;
+}
+
+.README {
+    display: flex;
+    align-items: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--docs-bg-color);
+    color: var(--text-color);
+    height: 45px;
+    border-radius: 0px;
+    padding: 0px 10px;
+    max-width: 300px;
+    gap: 0.5rem;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 200ms all ease;
+    font-weight: 500;
+}
+
+.README:hover {
+    background-color: #57575725;
+    border-radius: 6px;
+}
+
+.README-Rule {
+    display: flex;
+    position: absolute;
+    align-items: baseline;
+    background-color: transparent;
+    color: var(--text-color);
+    height: 45px;
+    border-radius: 0px;
+    font-weight: 500;
+    box-sizing: border-box;
+    width: 100px;
+    border-bottom: 2px solid #e27962;
+}
+
+.README svg {
+    margin-top: 3%;
+    width: 1em;
+    height: 1em;
+    fill: var(--docs-text-color);
+}
+
+.markdownarea h1 { font-size: 2em; border-bottom: 1px solid var(--docs-hr-color); padding-bottom: 0.3em; margin-top: 1.5em; }
+.markdownarea h2 { font-size: 1.5em; border-bottom: 1px solid var(--docs-hr-color); padding-bottom: 0.2em; margin-top: 1.2em; }
+.markdownarea h3 { font-size: 1.2em; margin-top: 1em; }
+.markdownarea h4 { font-size: 1em; margin-top: 0.8em; }
+.markdownarea p { margin-top: 0.8em; }
+.markdownarea a { color: var(--docs-link-color); text-decoration: none; }
+.markdownarea a:hover { text-decoration: underline; }
+.markdownarea ul { padding-left: 2rem; margin-top: 0.5em; }
+.markdownarea ol { padding-left: 2rem; margin-top: 0.5em; }
+
+.markdownarea blockquote {
+    border-left: 4px solid var(--docs-blockquote-border);
+    padding-left: 1em;
+    color: var(--docs-text-color);
+    background-color: var(--docs-blockquote-bg);
+    margin: 1em 0;
+    padding-bottom: 1px;
+    padding-top: 1px;
+}
+
+.markdownarea code { 
+    background-color: var(--docs-code-bg);
+    color: var(--docs-code-text);
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.markdownarea pre {
+    background-color: var(--docs-code-bg);
+    color: var(--docs-code-text);
+    padding: 1em;
+    overflow-x: auto;
+    border-radius: 6px;
+    font-size: 0.9em;
+    margin: 1em 0;
+}
+
+.markdownarea hr { border: 0; border-top: 1px solid var(--docs-hr-color); margin: 2em 0; }
+
+.markdownarea table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1em 0;
+}
+.markdownarea th, .markdownarea td {
+    border: 1px solid var(--docs-table-border);
+    padding: 0.5em 1em;
+}
+.markdownarea th { background-color: var(--docs-table-header-bg); font-weight: 600; }
